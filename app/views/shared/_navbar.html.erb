@@ -1,37 +1,18 @@
-<nav class="navbar sticky-top navbar-light bg-light">
-  <nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
     <a class="navbar-brand" href="#">
     	<%= image_tag "logo_no_quote.png", width: 250, height: 75, alt: "AviationFirst", class: 'logo-img' %>
   	</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse navbar-right" id="navbarNavAltMarkup">
-    <div class="navbar-nav navbar-right">
-      <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-item nav-link" href="#">Features</a>
-      <a class="nav-item nav-link" href="#">Pricing</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+            </li>
+        </ul>
     </div>
-  </div>
-
-	<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-	<ul class="nav navbar-nav navbar-right active">
-		<li class = "<%= active?(root_path) %>">
-			<a href="/">Home</a>
-		</li>
-		<li class = "<%= active?(root_path) %>">
-			<a href="/about">About</a>
-		</li>
-		<li class = "<%= active?(root_path) %>">
-			<a href="/services">Services</a>
-		</li>
-		<li class = "<%= active?(root_path) %>">
-			<a href="/gallery">Gallery</a>
-		</li>
-		<li class = "<%= active?(root_path) %>">
-			<a href="/contact">Contact</a>
-		</li>
-	</ul>
-</div>
-</nav>
 </nav>
