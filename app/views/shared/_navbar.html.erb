@@ -6,12 +6,12 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
-        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Home</a>
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end active">
+            <li class="nav-item <%= active?(root_path) %>">
+                <a class="nav-link" href="/">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contact Us</a>
+            <li class="nav-item <%= active?(contact_path) %>">
+                <a class="nav-link" href="/contact">Contact Us</a>
             </li>
         </ul>
     </div>
