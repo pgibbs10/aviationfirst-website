@@ -1,5 +1,5 @@
 <nav class="navbar navbar-light navbar-expand-md bg-faded justify-content-center">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
     	<%= image_tag "logo_no_quote.png", width: 250, height: 75, alt: "AviationFirst", class: 'logo-img' %>
   	</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
@@ -8,10 +8,16 @@
     <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
         <ul class="nav navbar-nav ml-auto w-100 justify-content-end active">
             <li class="nav-item <%= active?(root_path) %>">
-                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/">HOME</a>
+            </li>
+            <li class="nav-item <%= active?(charter_path) %>">
+                <a class="nav-link" href="/charter">CHARTER SERVICES</a>
+            </li>
+            <li class="nav-item <%= active?(about_path) %>">
+                <a class="nav-link" href="/about">OUR TEAM</a>
             </li>
             <li class="nav-item <%= active?(contact_path) %>">
-                <a class="nav-link" href="/contact">Contact Us</a>
+                <a class="nav-link" href="/contact">CONTACT US</a>
             </li>
         </ul>
     </div>

@@ -1,6 +1,14 @@
 @import "bootstrap";
 @import "font-awesome";
 
+a {
+	font-family: 'Rubik Script Regular', sans-serif;
+}
+
+@font-face {
+  font-family: "Rubik Script Regular";
+  src: url(/assets/fonts/Rubik-Regular.ttf) format("truetype");
+}
 
 .navbar-nav > li > a, .navbar-brand {
     padding-top:5px !important; padding-bottom:0 !important;
@@ -14,6 +22,7 @@
      margin-bottom: 0;
 }
 
-.body {
+body {
 	margin-top: 0px;
+	font-family: 'Rubik Script Regular', sans-serif;
 }

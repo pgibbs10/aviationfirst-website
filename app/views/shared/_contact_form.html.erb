@@ -1,0 +1,33 @@
+<%= form_for @contact do |f| %>
+  <%= f.label :email, "Email Address" %> <br>
+  <%= f.text_field :email, required: true, placeholder: "Enter Email", class: "form-control" %>
+  <br>
+
+  <%= f.label :phone, "Phone Number" %> <br>
+  <%= f.text_field :phone, required: true, placeholder: "Enter Phone", class: "form-control" %>
+  <br>
+
+  <%= f.label :name, "Full Name" %> <br>
+  <%= f.text_field :name, required: "required", placeholder: "Enter Name", class: "form-control" %>
+
+  <br>
+
+  <%= f.label :topic, "Service you are interested in" %> <br>
+  <%= f.select :topic, ["Forging", "Precision Tungsten Inert Gas Welding (TIG)", "Gas Metal Arc Welding (GMAW)", "Flux Cored Arc Welding (FCAW)", "Shielded Metal Arc Welding (SMAW)", "Machining", "Computer Aided Design", "Multiple/Other (please specify below)"], {}, { class: "form-control" }%>
+
+  <br>
+
+  <%= f.label :message, "More details:" %> <br>
+  <%= f.text_area :message, as: :text, class: "form-control", rows: "3" %>
+
+  <br>
+
+  <div class="hidden">
+    <%= f.label :nickname %> <br>
+    <%= f.text_field :nickname, hint: "leave this field blank" %>
+  </div>
+
+  <p><small><em>*All fields are required</em></small></p>
+
+  <%= f.submit 'Send Email', class: "btn btn-primary" %>
+<% end %>
