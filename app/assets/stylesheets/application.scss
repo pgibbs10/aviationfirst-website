@@ -13,6 +13,24 @@
      margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  .nav-links {
+  	margin-top: 50px;
+  }
+  .nav-item {
+  	text-align: center;
+  }
+}
+
+.footy {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
 body {
 	margin-top: 0px;
 	font-family: 'Rubik Script Regular', sans-serif;
